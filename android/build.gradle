@@ -58,6 +58,8 @@ android {
       }
     }
   }
+  artifacts.add("default", file('gomobile-sources.jar'))
+  artifacts.add("default", file('gomobile.aar'))
 }
 
 repositories {
@@ -132,9 +134,11 @@ repositories {
 
 
 dependencies {
+  implementation fileTree(dir: "lib", include: ["*.jar", "*.aar"])
     //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
-// From node_modules
+
+  // From node_modules
 }
 
 if (isNewArchitectureEnabled()) {
