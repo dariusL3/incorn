@@ -58,7 +58,6 @@
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "incognito-chain-web-js": "github:incognitochain/incognito-chain-web-js#dev/refactor-091022",
     "jest": "^28.1.1",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
@@ -73,7 +72,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "incognito-chain-web-js": "github:incognitochain/incognito-chain-web-js#dev/refactor-091022"
   },
   "jest": {
     "preset": "react-native",
